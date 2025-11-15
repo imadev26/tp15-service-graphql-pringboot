@@ -2,7 +2,18 @@
 
 Application Spring Boot avec GraphQL pour la gestion de comptes bancaires et de transactions.
 
-## 📋 Prérequis
+## � Captures d'écran
+
+L'application inclut une interface GraphiQL complète permettant de tester toutes les fonctionnalités :
+
+- Création de comptes (COURANT et EPARGNE)
+- Gestion des transactions (DEPOT et RETRAIT)
+- Consultation des statistiques
+- Requêtes personnalisées
+
+Voir les exemples d'utilisation avec screenshots dans la section [Tests avec GraphiQL](#-tests-avec-graphiql).
+
+## �📋 Prérequis
 
 - Java 17 ou supérieur
 - Maven 3.6+
@@ -101,6 +112,8 @@ query {
 }
 ```
 
+![Tous les comptes](screen/Screenshot%202025-11-15%20110220.png)
+
 #### 2. Récupérer un compte par ID
 
 ```graphql
@@ -144,6 +157,8 @@ query {
 }
 ```
 
+![Statistiques soldes](screen/Screenshot%202025-11-15%20110302.png)
+
 #### 5. Récupérer toutes les transactions d'un compte
 
 ```graphql
@@ -186,6 +201,8 @@ query {
 }
 ```
 
+![Statistiques transactions](screen/Screenshot%202025-11-15%20110318.png)
+
 ### Mutations
 
 #### 1. Créer un nouveau compte
@@ -204,6 +221,8 @@ mutation {
 }
 ```
 
+![Créer compte COURANT](screen/Screenshot%202025-11-15%20110121.png)
+
 #### 2. Créer un compte d'épargne
 
 ```graphql
@@ -219,6 +238,8 @@ mutation {
     }
 }
 ```
+
+![Créer compte EPARGNE](screen/Screenshot%202025-11-15%20110150.png)
 
 #### 3. Ajouter une transaction (dépôt)
 
@@ -240,6 +261,8 @@ mutation {
 }
 ```
 
+![Ajouter dépôt](screen/Screenshot%202025-11-15%20110246.png)
+
 #### 4. Ajouter une transaction (retrait)
 
 ```graphql
@@ -259,6 +282,8 @@ mutation {
     }
 }
 ```
+
+![Ajouter retrait](screen/Screenshot%202025-11-15%20110336.png)
 
 ## 🎯 Fonctionnalités
 
